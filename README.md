@@ -4,23 +4,23 @@ Async Muliti Communication Class.
 ```php
 
 // Get Instance.
-$async		    = new Async();
+$Async		    = new Async();
 
 // Add ch(url).
-$async->addCh( 'AMZON' ,    $url1 );
-$async->addCh( 'GOOGLE' ,   $url2 );
-$async->addCh( 'APPLE' ,    $url3 );
-$async->addCh( 'TWITTER' ,  $url4 );
-$async->addCh( 'FACEBOOK' , $url5 );
+$Async->addCh( 'AMZON' ,    $url1 );
+$Async->addCh( 'GOOGLE' ,   $url2 );
+$Async->addCh( 'APPLE' ,    $url3 );
+$Async->addCh( 'TWITTER' ,  $url4 );
+$Async->addCh( 'FACEBOOK' , $url5 );
 
 // Async Muliti Communication.
-$talk		    = $async->talk();
+$talk		  = $Async->talk();
 
 // Get Responses.
-$response	  = $talk->getResponse( 'AMAZON', array( 'str_to_xmlstr', 'xmlstr_to_arr' ) );
-$response	  = $talk->getResponse( 'GOOGLE', array( 'str_to_xmlstr', 'xmlstr_to_arr' ) );
-$response	  = $talk->getResponse( 'APPLE', array( 'str_to_xmlstr', 'xmlstr_to_arr' ) );
-$response	  = $talk->getResponse( 'TWITTER', array( 'str_to_xmlstr', 'xmlstr_to_arr' ) );
-$response	  = $talk->getResponse( 'FACEBOOK', array( 'str_to_xmlstr', 'xmlstr_to_arr' ) );
+$response	  = $talk->getResponse( 'AMAZON',	array( 'str_to_xmlstr', 'xmlstr_to_arr' ) );
+$response	  = $talk->getResponse( 'GOOGLE',	array( 'str_to_xmlstr', 'xmlstr_to_arr' ) );
+$response	  = $talk->getResponse( 'APPLE',	array( 'str_to_xmlstr', 'xmlstr_to_arr' ) );
+$response	  = $talk->getResponse( 'TWITTER',	array( 'str_to_xmlstr', 'xmlstr_to_arr' ) );
+$response	  = $talk->getResponse( 'FACEBOOK',	array( 'str_to_xmlstr', 'xmlstr_to_arr' ) );
 
 ```
