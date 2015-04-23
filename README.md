@@ -2,8 +2,8 @@
 Async Muliti Communication Class.
 
 ```php
-// Get Instance.
 
+// Get Instance.
 $async		    = new Async();
 
 // Add ch(url).
