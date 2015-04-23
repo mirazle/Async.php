@@ -15,7 +15,7 @@ $Async->addCh( 'FACEBOOK' , $url3 );
 $talk		  = $Async->talk();
 
 // Get Responses.
-$response	  = $talk->getResponse( 'APPLE',	array( 'str_to_xmlstr', 'xmlstr_to_arr' ) );
+$response	  = $talk->getResponse( 'APPLE',	array( 'xmlstr_to_arr' ) );
 $response	  = $talk->getResponse( 'TWITTER',	array( 'str_to_xmlstr', 'xmlstr_to_arr' ) );
 $response	  = $talk->getResponse( 'FACEBOOK',	array( 'str_to_xmlstr', 'xmlstr_to_arr' ) );
 
